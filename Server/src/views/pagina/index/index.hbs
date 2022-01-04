@@ -1,0 +1,23 @@
+ <header>
+     <h1> Venta de Frutas</h1>
+ </header>
+ <div id="lsProducto">
+     <h2>Lista de Productos</h2>
+    <div class="row">
+        {{#each consulta}}
+            {{nombre}} {{precio}} {{medida}} 
+            <form method="POST" action="/producto">
+            <label for="id">
+                <input type="text" name="id" readonly id="id" style="display: none;">
+            </label>
+            <input type="submit" value="Comprar">
+            </form>
+        {{else}}
+            <h1> no se encontraron archivos</h1>
+        {{/each}}
+
+       </div>
+</div>
+ <a href=""> ir a carrito</a>
+ <a href="/register">Registrarse</a>
+ <a href="/login">Iniciar sesion</a>

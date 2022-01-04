@@ -1,0 +1,19 @@
+<header>
+    <h1> Coma platano </h1>
+</header>
+<div>
+    <h3 class="datos">precio</h3>
+    <p class="datos"> medida: </p>
+    <p class="datos"> nombre, precio: </p>
+</div>
+<form action="/agregarDetalle" method="POST">
+    <label for="id">
+        <input type="text" name="id" readonly id="id" style="display: none;">
+    </label>
+    <label for="cantidad">
+        cantidad
+        <input type="number" name="cantidad" required value="1">
+    </label>
+    <input type="submit" id="enviar">
+</form>
+<a href="./../../index.html"> Agregar mas productos</a>
